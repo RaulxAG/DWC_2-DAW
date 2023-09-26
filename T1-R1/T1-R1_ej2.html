@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="#" class="formulario">
+        Escribe tu edad: 
+        <input type="number" id="edad" style="width: 45px;">
+        <input type="submit" onclick="calcularEdad()">
+    </form>
+
+    <script>
+
+        function calcularEdad() {
+            var edad = document.getElementById("edad").value;
+            
+            alert(edad >= 18 ? "eres mayor de edad" : "no eres mayor de edad");
+        }
+
+    </script>
+</body>
+</html>

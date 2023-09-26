@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="#" class="formulario">
+        Escribe tu edad: 
+        <input type="number" id="edad" style="width: 45px;">
+        <input type="submit" onclick="calcularEdad()">
+    </form>
+    
+    <script>
+
+        function calcularEdad() {
+            var mensaje;
+
+            switch (true) {
+                case (edad > 18):
+                    mensaje = "Absoluto";
+                    break;
+                case (edad >= 16 && edad <= 18):
+                    mensaje = "Juvenil";
+                    break;
+                case (edad >= 14 && edad <= 15):
+                    mensaje = "Cadete";
+                    break;
+                case (edad >= 12 && edad <= 13):
+                    mensaje = "Infantil";
+                    break;
+                case (edad >= 10 && edad <= 11):
+                    mensaje = "Alevín";
+                    break;
+                case (edad >= 8 && edad <= 9):
+                    mensaje = "Benjamín";
+                    break;
+                default:
+                    mensaje = "Eres demasiado joven";
+                    break;
+            }
+            
+            alert("Tu edad corresponde a " + mensaje);
+        }
+
+    </script>
+</body>
+</html>

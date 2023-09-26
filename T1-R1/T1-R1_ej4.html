@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var hora = 9;
+        var minutos = 0;
+
+        while (hora <= 21) {
+            document.write(hora + ":");
+
+            if (minutos === 0) {
+                document.write("00");
+            } else {
+                document.write(minutos);
+            }
+
+            document.write("<br>");
+
+            if (minutos === 0) {
+                minutos = 30;
+            } else {
+                minutos = 0;
+                hora++;
+            }
+        }
+
+    </script>
+</body>
+</html>

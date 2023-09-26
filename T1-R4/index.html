@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <script>
+        document.write("<br>Resultado: " + sum(1,2,3,4));
+        document.write("<br>Resultado: " + addOnlyNums(1, 'cat', 3, 4));
+        document.write("<br>Resultado: " + countTheArgs('cat', 'dog', 'frog', 'bear'));
+        
+        var array1 = ['francisco','jose'];
+        var array2 = [1,0];
+        document.write("<br>Resultado: " + combineTwoArrays(array1, array2));
+
+        document.write("<br>Resultado: " + sumEveryOther(5, 6, 3, 4, 1));
+
+        document.write("<br>Resultado: " + onlyUniques('cat', 'cat', 'dog', 'pig')); //['cat', 'dog', 'pig']
+
+        document.write("<br>Resultado: " + combineAllArrays([1,2,3], ['juan','foche'], ['prueba']));
+
+        document.write("<br>Resultado: " + squareAndSum(2,4,3));
+    </script>
+</body>
+</html>

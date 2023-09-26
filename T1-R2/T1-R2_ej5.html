@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const numeroAAdivinar = parseInt(prompt("Jugador 1, introduce un número para que el Jugador 2 lo adivine:"));
+
+        let intentos = 0;
+        let acertado = false;
+
+        while (!acertado) {
+
+        const numeroAdivinanza = parseInt(prompt("Jugador 2, adivina el número:"));
+
+        intentos++;
+
+        if (numeroAdivinanza === numeroAAdivinar) {
+            acertado = true;
+            alert(`¡Felicitaciones, Jugador 2! Adivinaste el número ${numeroAAdivinar} en ${intentos} intentos.`);
+        } else if (numeroAdivinanza < numeroAAdivinar) {
+            alert("El número a adivinar es mayor. Sigue intentando.");
+        } else {
+            alert("El número a adivinar es menor. Sigue intentando.");
+        }
+        }
+
+    </script>
+</body>
+</html>

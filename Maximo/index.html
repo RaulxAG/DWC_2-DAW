@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximo</title>
+    <script type="text/javascript" src="js/maximo.js"></script>
+</head>
+<body>
+    <script>
+        console.log("hooa");
+        var argumentos = [];
+        var condicion = false;
+
+        console.log(condicion);
+
+        while (!condicion) {
+            respuesta = prompt("Introduce numeros (\"parar\" para salir): ");
+            if (respuesta=="parar") {
+                condicion=true;
+            }else{
+                argumentos += respuesta;
+            }
+        }
+
+        document.write("Numeros introducidos:" + argumentos + " maximo:" + maximo(argumentos));
+    </script>
+</body>
+</html>

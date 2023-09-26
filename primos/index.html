@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es primo?</title>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <script>
+        const numero = prompt("Introduce un numero: ");
+        if (esPrimo(numero)) {
+            document.write(numero + " es primo.");
+        } else {
+            document.write(numero + " no es primo.");
+        }
+
+        const primosEnRango = encontrarPrimosEnRango(1, 100);
+        document.write("<br>Números primos del 1 al 100 = ", primosEnRango);
+    </script>
+</body>
+</html>
