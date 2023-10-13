@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        td{
+            border: 1.5px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Resolución de la Pantalla</td>
+            <td id="resolucionPantalla"></td>
+        </tr>
+        <tr>
+            <td>Profundidad de Color</td>
+            <td id="profundidadColor"></td>
+        </tr>
+        <tr>
+            <td>Altura de la Pantalla</td>
+            <td id="alturaPantalla"></td>
+        </tr>
+        <tr>
+            <td>Ancho de la Pantalla</td>
+            <td id="anchoPantalla"></td>
+        </tr>
+    </table>
+
+    <script>
+        document.getElementById("resolucionPantalla").innerText = window.screen.width + " x " + window.screen.height;
+        document.getElementById("profundidadColor").innerText = window.screen.colorDepth + " bits";
+        document.getElementById("alturaPantalla").innerText = window.screen.height + " px";
+        document.getElementById("anchoPantalla").innerText = window.screen.width + " px";
+    </script>
+</body>
+</html>

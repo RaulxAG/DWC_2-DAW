@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/ej3.js"></script>
+</head>
+<body>
+    <h4>a) Abre una ventana de confirmacin, mostrando que opción ha pulsado el usuario.</h4>
+    
+    <ul>
+        <li><a onclick="mostrarConfirmacion('Opción 1')">Opción 1</a></li>
+        <li><a onclick="mostrarConfirmacion('Opción 2')">Opción 2</a></li>
+        <li><a onclick="mostrarConfirmacion('Opción 3')">Opción 3</a></li>
+    </ul>
+
+    <h4>b) Abre una ventana y después analiza si esta se cerrado o no</h4>
+
+    <a onclick="abrirVentana()">Abrir Ventana</a>
+    <br>
+    <a onclick="verificarCierreVentana()">Ver estado de la ventana</a>
+
+    <h4>c) Cambia la línea de estado y muestra en una ventana el cambio realizado.</h4>
+
+    <a onclick="cambiarLineaEstado()">Cambiar Línea de Estado</a>
+
+    <h4>d) Abre una ventana y pide al usuario un nuevo nombre para ella.</h4>
+
+    <a onclick="abrirVentana2()">Abrir Ventana</a>
+
+    <h4>e) El primer enlace permite cerrar la ventana actual y el segundo cierra una
+        ventana abierta con el método open() en la variable ventanaNueva.
+    </h4>
+    
+    <a onclick="abrirVentana3()">Abrir Ventana</a>
+    <br>
+    <a onclick="cerrarVentanaActual()">Cerrar Ventana Actual</a>
+    <br>
+    <a onclick="cerrarVentanaNueva()">Cerrar Ventana Nueva</a>
+
+    <h4>f) Abre una ventana de un tama o de 300x100 que puede ser cambiada de tamaño</h4>
+
+    <a onclick="abrirVentana4()">Abrir Ventana</a>
+    <br>
+    <a onclick="cambiarTamanioVentana(400, 200)">Cambiar a 400x200</a>
+    <a onclick="cambiarTamanioVentana(500, 300)">Cambiar a 500x300</a>
+
+    <h4>h) Mueve la ventana 50px hacia abajo y hacia la derecha al activar el enlace</h4>
+    
+    <a onclick="abrirVentana5()">Abrir Ventana</a>
+    <br>
+    <a onclick="moverVentana()">Mover Ventana</a>
+
+    <h4>i) Provoca que la ventana se sitúe en una posición concreta de la pantalla. 
+        El punto de referencia es la esquina superior izquierda de la ventana del
+        navegador y de la pantalla del ordenador.
+    </h4>
+    
+    <a onclick="abrirVentana6()">Abrir Ventana</a>
+    <br>
+    <a onclick="situarVentana()">Situar Ventana en (100, 100)</a>
+
+    <h4>j) Mueve la barra de desplazamiento 10 pixeles hacia abajo</h4>
+
+    <a onclick="moverBarraDesplazamiento()">Mover barra desplazamiento</a>
+
+    <h4>k) Desplaza la barra de desplazamiento a una determinada posición.</h4>
+
+    <a onclick="desplazarBarraDesplazamiento()">Desplazar barra</a>
+</body>
+</html>

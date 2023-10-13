@@ -1,5 +1,5 @@
 function hipotenusa(cat1,cat2) {
-    return ((cat1*2)+(cat2*2));
+    return Math.sqrt(((cat1*2)+(cat2*2)));
 }
 
 function hipotenusaContinuar() {
