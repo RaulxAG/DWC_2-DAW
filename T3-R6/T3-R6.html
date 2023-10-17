@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Hecho por: Antonio y Raul Arroyo
+
+            // La variable X coge el valor de cada posicion del array, algo asi como un loop
+            function mysteryFunc(arr, num) {
+                return arr.map(x => (x % num))
+            }
+
+            console.log(mysteryFunc([5, 7, 8, 2, 1], 2));
+
+            // Esto se inventó por simplificar el código, si quieres hacer una arrow function
+            // sin parametros debes indicar los parentesis para indicar que es una función
+            const myFunc = () => "value";
+
+
+            // Se declara "user" como en un loop normal, con user indicas el nombre de la variable que le das
+            // a cada iteración del loop
+            const users = [
+                { name: 'John', age: 34 },
+                { name: 'Amy', age: 20 },
+                { name: 'camperCat', age: 10 }
+            ];
+
+
+            // Ejercicio Nº 4
+            const names = users.map(user => user.name);
+            console.log(names); // [ 'John', 'Amy', 'camperCat' ]
+
+            const Person = (name) => {
+                const sayName = () => console.log(`my name is ${name}`)
+                return { sayName }
+            }
+
+            const Nerd = (name) => {
+                // simply create a person and pull out the sayName function!
+                const { sayName } = Person(name) // . . . .  . . . ( 1 )
+                const doSomethingNerdy = () => console.log('nerd stuff')
+                return { sayName, doSomethingNerdy }
+            }
+
+            const jeff = Nerd('jeff')
+
+            jeff.sayName() //my name is jeff
+            jeff.doSomethingNerdy() // nerd stuff
+
+            
+            // Traduccion a funcion normal
+            const Person2 = function sayName(name) {
+                
+                const sayName = function (name) {
+                    console.log(`my name is ${name}`)
+                }
+                
+                return sayName;
+            }
+
+            const Nerd2 = function doSomethingNerdy(name) {
+                // simply create a person and pull out the sayName function!
+                const sayName = Person(name) // . . . .  . . . ( 1 )
+
+                const doSomethingNerdy = function decirNerd(){ 
+                    console.log('nerd stuff')
+                };
+                
+                return { sayName, doSomethingNerdy }
+            }
+
+            Person2("jeffy") //my name is jeff
+            Nerd2("jeffy") // nerd stuff
+
+
+            // Quitar los corchetes del arrow, ya que al solo ser una línea no hace falta poner corchetes 
+            // y en el console log donde se llama a la función, pasarle parametros.
+            //console.clear();
+            var sum;
+            sum = (a, b) => a + b;
+            console.log(sum(1,2));
+    </script>
+</body>
+</html>

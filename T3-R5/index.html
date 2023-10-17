@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/FuncionesArrow.js"></script>
+</head>
+<body>
+    <script>
+        document.write("Suma de 40+2=" + sum(40,2) + "<br><br>");
+        document.write("Suma de 42+0=" + sum(42,0) + "<br><br>");
+
+        let longestCityNameInTheWorld = "Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu";
+        document.write("Longitud de " + longestCityNameInTheWorld + " : " + stringLength(longestCityNameInTheWorld) + "<br><br>");
+
+        document.write("Longitud de willynilly : " + stringLength("willynilly") + "<br><br>");
+
+        let alerts = ["Hey, you are awesome", "You are so wonderful", "What a marvel you are", "You're so lovely", "You're so sweet that I'd think you're a sweet potato -- and I LOOOOVE POTATOES"];
+        showAlert("you ball of fluff");
+
+        document.write(saludo("Raúl", 21) + "<br><br>");
+
+        var enteros = [1,2,3,4,5];
+        document.write("Suma total del array: " + enteros + ": " + sumArray(enteros) + "<br><br>");
+
+        document.write(fire() + "<br><br>");
+
+        document.write("Fibonacci de 13 = " + fibonacci(13));
+    </script>
+</body>
+</html>
