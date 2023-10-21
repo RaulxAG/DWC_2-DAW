@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <script>
+
+        // Ejercicio 1
+        document.write("Ejercicio 1<br>");
+        Persona.nombre="Pepe"
+        Persona.edad=23;
+
+        Persona.mayorEdad();
+
+        let per1 = new crearPersona("12345678G","Juan",16);
+
+        per1.mayorEdad();
+
+        let per2 = new crearPersona("87654321G","Jose",62);
+        let per3 = new crearPersona("12348765G","Antonio",57);
+        let per4 = new crearPersona("87651234G","Francisco",32);
+
+
+        let arrayPersonas = [per1,per2,per3];
+
+        edadMedia(arrayPersonas);
+
+        // Ejercicio 2
+        document.write("<br>Ejercicio 2<br>");
+        let tel = new Telefono(607542345);
+
+        document.write(tel.numTlfn + ": llamadas realizadas: " + tel.llamadas + "<br><br>");
+
+        tel.llamar();
+        tel.llamar();
+        tel.llamar();
+
+        document.write(tel.numTlfn + ": llamadas realizadas: " + tel.llamadas + "<br><br>");
+
+        // Ejercicio 3
+        document.write("<br>Ejercicio 3<br>");
+        let punto1 = new Punto(-123,234);
+
+        document.write("el punto esta situado en las cordenadas: " + punto1.x + " " + punto1.y + "<br><br>");
+
+        // Ejercicio 4
+        document.write("<br>Ejercicio 4<br>");
+        let casaA = new Casa("Garcia Prieto",58,15706);
+        let casaB = new Casa("Camino Caneiro",29,32004);
+        let casaC = new Casa("San Clemente","s/n",15705);
+
+        document.write("El codigo postal de la casaA es: " + casaA.imprimeCodigoPostal() + "<br>");
+        document.write("La calle de la casaC es: " + casaC.imprimeCalle() + "<br><br>");
+
+        // Ejercicio 5
+        document.write("<br>Ejercicio 5<br>");
+        let col1 = new Colegio("IES Pedro Pablo López de los Arcos", 10, 79);
+
+        col1.consultarNotaMedia(1);
+        col1.modificarNotaMedia(1, 7);
+        col1.consultarNotaMedia(1);
+
+        document.write("Numero de alumnos: " + col1.verNumAlum() + "<br><br>");
+        document.write("Numero de aulas: " + col1.verNumAulas() + "<br><br>");
+    </script>
+</body>
+</html>
