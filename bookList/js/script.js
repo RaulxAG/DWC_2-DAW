@@ -100,7 +100,42 @@ function formSubmit() {
     if (libros.addBook(book)) {
         // Crear y agregar un elemento para el libro en la interfaz
         var bookDiv = document.createElement("div");
-        // ... (código para crear y estilizar el div)
+        
+        var divTitleAuthor = document.createElement("div");
+
+        var h4Title = document.createElement("h4");
+        h4Title.innerHTML = book.title;
+
+        var h5Author = document.createElement("h5");
+        h5Author.innerHTML = book.author;
+
+        divTitleAuthor.appendChild(h4Title);
+        divTitleAuthor.appendChild(h5Author);
+
+        divTitleAuthor.style.width = "85%";
+
+        var divState = document.createElement("div");
+        var state = document.createElement("h5")
+        state.className = "fechaLectura";
+        state.innerHTML = "Not Read";
+
+        divState.appendChild(state);
+
+        bookDiv.appendChild(divTitleAuthor);
+        bookDiv.appendChild(divState);
+
+        bookDiv.style.marginTop = "10px";
+        bookDiv.style.marginBottom = "10px";
+        bookDiv.style.padding = "15px";
+        bookDiv.style.color = "white";
+        bookDiv.style.backgroundColor = "rgba(200, 200, 200, 0.7)";
+        bookDiv.style.borderRadius = "20px";
+        bookDiv.style.color = "#333";
+        bookDiv.style.boxShadow = "inset 0 0 2px";
+
+        bookDiv.style.display = "flex";
+        bookDiv.style.justifyContent = "space-around";
+        bookDiv.style.cursor = "pointer";
 
         bookDiv.addEventListener('click', () => leerLibro(book, bookDiv));
 
@@ -146,3 +181,5 @@ function leerLibro(selectedBook, bookDiv) {
         });
     }
 }
+
+var libros = new BookList();
