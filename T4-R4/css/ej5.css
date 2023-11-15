@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(166, 236, 157);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: absolute;
+    top: 5%;
+    border-radius: 35px;
+    box-shadow: 0 0 17px 10px gray;
+    width: 500px;
+    height: 300px;
+    background-image: linear-gradient(90deg, rgb(24, 108, 5)0%, rgb(85, 204, 16) 100%);
+}
+
+.card {
+    border-radius: 35px;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.5);
+    background-image: url("./map.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.chipLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 45px;
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.clientInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.cardNum {
+    font-family:monospace, sans-serif;
+    margin-left: 40px;
+    font-size: xx-large;
+}
+
+.date {
+    text-align: right;
+}
+
+.cardName, .date {
+    font-size: larger;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section {
+    border-radius: 20px;
+    box-shadow: 0 25px 25px 10px gray;
+    width: 50vh;
+    height: 60vh;
+    padding: 30px;
+    background-color: aliceblue;
+}
+
+#formulario {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+#formulario input {
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+#formulario > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#date > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    justify-content: center;
+}
+
+.fecha {
+    display: flex;
+    flex-direction: column;
+}
+
+.fecha select {
+    padding: 10px;
+    width: 150px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#divCvv {
+    margin-left: 30px;
+}
+
+#cvv {
+    display: flex;
+    width: 80%;
+}
+
+form #submit {
+    background-color: rgb(50, 206, 50);
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ej5.css">
+    <script src="js/ej5.js"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="card">
+                <div class="chipLogo">
+                    <div class="chip">
+                        <img src="https://i.ibb.co/G9pDnYJ/chip.png" width="60px">
+                    </div>
+        
+                    <div class="logo">
+                        <img src="https://i.ibb.co/WHZ3nRJ/visa.png" width="60px">
+                    </div>
+                </div>
+                
+                <div class="cardInfo">
+                    <div class="cardNum">
+                        <p id="pNumero"></p>
+                    </div>
+                    <div class="clientInfo">
+                        <div class="cardName">
+                            <p>Titular</p>
+                            <p id="pTitular"></p>
+                        </div>
+                        <div class="date">
+                            <p>Fecha Exp.</p>
+                            <p id="fechaExp"><span id="spanMes"></span> / <span id="spanAnio"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <form action="#" method="post" id="formulario">
+                <div>
+                    <label for="numero">Numero de tarjeta</label>
+                    <input type="text" name="numero" id="numero" placeholder="0000-0000-0000-0000" required>
+                </div>
+                <div>
+                    <label for="titular">Titular</label>
+                    <input type="text" name="titular" id="titular" placeholder="nombre apellido apellido" required>
+                </div>
+                <div>
+                    <div id="date">
+                        <div>
+                            <div class="fecha">
+                                <label for="mes">Mes</label>
+                                <select name="mes" id="mes" required>
+                                    <option value="">mes</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div class="fecha">
+                                <label for="anio">Año</label>
+                                <select name="anio" id="anio" required>
+                                    <option value="">año</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                    <option value="32">32</option>
+                                </select>
+                            </div>
+                            <div id="divCvv">
+                                <label for="cvv">CVV</label>
+                                <input type="text" name="cvv" id="cvv" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html> 

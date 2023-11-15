@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/ej4.css">
+    <script src="js/ej4.js"></script>
+</head>
+<body>
+    <main>
+        <section id="izquierda">
+            <figure>
+                <img src="css/persons.png" alt="">
+            </figure>
+        </section>
+        <section id="derecha">
+            <form action="#" method="post" id="formulario">
+                <div>
+                    <h3>Welcome to Crowdrise</h3>
+                    <h6>
+                        Let's get you all set up so you can verify your 
+                        nonprofit and begin setting up your first campaign!
+                    </h6>
+                </div>
+
+                <p>Already have an account? <a href="#">Log in.</a></p>
+
+                <div id="datos">
+                    <div>
+                        <div>
+                            <label  id="labelDato" for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Peter" required>
+                        </div>
+                        
+                        <div>
+                            <label id="labelDato" for="Phone">Phone</label>
+                            <input type="text" name="Phone" id="Phone" placeholder="949-867-5309" required>
+                        </div>
+
+                        <div>
+                            <label id="labelDato" for="Password">Password</label>
+                            <input type="password" name="Password" id="Password" placeholder="********" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label id="labelDato" for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Deltondo" required>
+                        </div>
+                        
+                        <div>
+                            <label id="labelDato" for="Email">Email</label>
+                            <input type="email" name="Email" id="Email" placeholder="pdeltondo@crowdrise.com" required>
+                        </div>
+                        
+                        <div>
+                            <label id="labelDato" for="confirmPassword">Confirm Password</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="********" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="checkboxes">
+                    <div>
+                        <input type="checkbox" name="consentEmails" id="consentEmails">
+                        <label for="consentEmails">Yes, I want to receive Crowdrise's emails</label>
+                    </div>
+                
+                    <div>
+                        <input type="checkbox" name="termsPolicy" id="termsPolicy">
+                        <label for="termsPolicy">I agree to the <a href="#">Terms. Privacy Policy and fees.</a></label>
+                    </div>
+                </div>
+
+                <div>
+                    <input  id="submit" type="submit" value="Sign Up">
+                </div>
+
+                <p>Don't work for a nonprofit? <a href="#">You can still fundraise for one.</a></p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
