@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>The Reading List</h1>
+    </header>
+
+    <main>
+        <form id="formulario" action="#" method="get">
+            <input type="text" name="title" id="title" placeholder="Título del libro" required>
+            <div>
+                <input type="text" name="author" id="author" placeholder="Autor del libro" required>
+                <input type="text" name="genre" id="genre" placeholder="Genero" required>
+            </div>
+            <a id="submit">Add book</a>
+        </form>
+        <div id="listaLibros">
+            <section id="lista">
+                <h3>List of Books</h3>
+            </section>
+            <p>Libros por leer: <span id="contadorLibros">0</span>/<span id="restantes">0</span></p>
+        </div>
+    </main>
+</body>
+</html>
